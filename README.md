@@ -1,2 +1,2 @@
 # Meet-Doctor-trainning
-Please look for master brance
+Kindly, go to master brance for the project. Thank you.

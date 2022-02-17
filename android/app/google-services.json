@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "917252772872",
+    "project_id": "meet-doctor-training",
+    "storage_bucket": "meet-doctor-training.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917252772872:android:e6cc22332a5d442fc62dbd",
+        "android_client_info": {
+          "package_name": "com.example.meet_doctor_training"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917252772872-hu17h4s37p7fqe9r4nu5omv2bap8pqos.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meet_doctor_training",
+            "certificate_hash": "eb3a8909144b8a58c176daa42a69344c8e1b78a8"
+          }
+        },
+        {
+          "client_id": "917252772872-3lb9i562oecrvif0e9avdjjljpqgp0e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkiNipK_8H9mEwGk2-rrUN78g4EneRD9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917252772872-3lb9i562oecrvif0e9avdjjljpqgp0e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

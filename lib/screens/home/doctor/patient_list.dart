@@ -31,7 +31,6 @@ class _PatientListState extends State<PatientList> {
             .collection("users")
             .doc(pro.profileUid)
             .collection('patients')
-            //.where("status", isEqualTo: "doctor")
             .snapshots(),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
@@ -46,7 +45,6 @@ class _PatientListState extends State<PatientList> {
           }
 
           final data = snapshot.data;
-          //log(data!.docs.toString() + " 11111111111111111111111");
 
           return ListView.builder(
             padding: EdgeInsets.zero,
@@ -86,15 +84,27 @@ class _PatientListState extends State<PatientList> {
               if (true) {
                 return Column(
                   children: [
-                    Card(
-                      child: Row(
-                        children: [
-                          Text(
-                            '${inc++}',
-                          ),
-                          Text(data?.docs[index - 1]['name']),
-                          Text(data?.docs[index - 1]['email']),
-                        ],
+                    ListTile(
+                      leading: Text(
+                        "Serial $index:",
+                        style: TextStyle(
+                          fontSize: 20.w,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      title: Text(
+                        data?.docs[index - 1]['name'],
+                        style: TextStyle(
+                          fontSize: 20.w,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      subtitle: Text(
+                        data?.docs[index - 1]['email'],
+                        style: TextStyle(
+                          fontSize: 20.w,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],

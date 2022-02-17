@@ -1,2 +1,2 @@
 # Meet-Doctor-trainning
-Kindly, go to master brance for the project. Thank you.
+Kindly, go to the master brance for the project. Thank you.

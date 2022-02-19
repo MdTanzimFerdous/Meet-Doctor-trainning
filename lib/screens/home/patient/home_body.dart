@@ -15,11 +15,6 @@ class HomeBody extends StatefulWidget {
   _HomeBodyState createState() => _HomeBodyState();
 }
 
-setData(){
-  FirebaseFirestore.instance.collection('users').doc(FirebaseAuth.instance.currentUser!.uid).collection('patient').doc().set({'p' : 'ikram'});
-}
-
-
 class _HomeBodyState extends State<HomeBody> {
   @override
   Widget build(BuildContext context) {
@@ -48,7 +43,7 @@ class _HomeBodyState extends State<HomeBody> {
       'psychiatrists.png',
     ];
     var pro = Provider.of<ProfileProvider>(context);
-    setData();
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
